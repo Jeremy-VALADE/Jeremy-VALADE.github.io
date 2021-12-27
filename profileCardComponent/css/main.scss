@@ -13,27 +13,12 @@ body {
     --color-dark-grey-neutral: hsl(0, 0%, 59%);
     
     font-family: "KumbhSans";
-    font-size: 18px;
-    background-color: var(--color-cyan);
+    font-size: 18px;   
     height: 100vh;
     overflow: hidden;
-    
-    .img-top {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: translate3d(0%, -68%, 0);    
-    }
-    
-    .img-bottom {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        transform: translate3d(9%, 68%, 0);    
-    }
-    
+    background: url("../assets/images/bg-pattern-top.svg") left 0px top -550px no-repeat, url("../assets/images/bg-pattern-bottom.svg") right -0px bottom -550px no-repeat;
+    background-position: fixed, fixed;
+    background-color: var(--color-cyan);  
     
     .card {
         width: 20%;
@@ -92,6 +77,9 @@ body {
 
 @media (max-width: 600px) {
     body {
+        background: url("../assets/images/bg-pattern-top.svg") left 140% top 115% no-repeat, url("../assets/images/bg-pattern-bottom.svg") left -33% top -17% no-repeat;
+        background-color: var(--color-cyan);  
+
         .card {
             width: 80%;
         }
