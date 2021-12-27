@@ -14,6 +14,7 @@
 3. Click on index.html file
 
 ## Reload css
+0. You must modify the **main.scss** file
 1. Open visual studio
 2. Create a file .vscode/tasks.json at the root of the project
 3. Fill the file with the following text:
